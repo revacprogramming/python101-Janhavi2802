@@ -2,7 +2,7 @@ fname = input("Enter file name: ")
 fh = open(fname)
 lst = list()
 for line in fh:
-	line.rstrip()
+  line.rstrip()
 for line in fh:
     for word in line.split():
         if not word in lst:
