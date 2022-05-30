@@ -1,5 +1,5 @@
 fname = input("Enter file name: ")
-fh = open(fname)
+fh=open(fhname)
 lst = list()
 for line in fh:
   line.rstrip()
