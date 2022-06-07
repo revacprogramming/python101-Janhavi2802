@@ -5,7 +5,7 @@ handle = open(name)
 d =dict()
 for line in handle:
     if not line.startswith("from"):
-        continue 
+        continue
         
 lst = list()
 for value,count in d.items():
