@@ -7,7 +7,7 @@ handle = open(name)
 d =dict()
 for line in handle:
     if not line.startswith("from"):
-        continue
+       continue
     else:
         line = line.split()
         line=line[5]
