@@ -1,6 +1,6 @@
 # Network Programming
 # https://www.py4e.com/lessons/network
-name = input("Enter file:")
+  name = input("Enter file:")
 handle = open(name)
 d =dict()
 for line in handle:
