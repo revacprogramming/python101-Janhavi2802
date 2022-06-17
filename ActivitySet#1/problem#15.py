@@ -12,7 +12,7 @@ for line in handle:
         line = line.split()
         line=line[5]
         line=line[0:2]
-        d[line]=d.get(line,0)+1
+        d[line]=d.get(lin
 
         
 lst = list()
