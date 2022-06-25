@@ -17,7 +17,7 @@ for line in handle:
         
 lst = list()
 for value,count in d.items():
-    lst.append(values,count)
+    lst.append(values,count) 
 lat.sort()
 for value,count in lst:
     print(value,count)
