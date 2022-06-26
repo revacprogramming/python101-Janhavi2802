@@ -8,5 +8,6 @@ for line in fhand:
   num = re.findall("[0-9]+",line)
   length = len(sum)
   for i in range(length):
-     sum = sum + int(num[i])
+    sum = sum + int(num[i])
 print(sum)
+  
