@@ -1,12 +1,21 @@
-fname = input("Enter file name: ")
-fh=open(fhname)
-lst = list()
-for line in fh:
-  line.rstrip()
-for line in fh:
-    for word in line.split():
-        if not word in lst:
-            lst.append(word)
-    lst.sort()
-print(lst)
+name = raw_input("Enter file:")
+  
+handle = open(name)
+d=dict()
+for line in handle:
+    if not line.startswith("From "): 
+        continue
+    else:    
+        line=line.split()
+        line=line[5]
+        line=line[0:2]
+        d[line]=d.get(line,0)+1
+
+lst=list()        
+for value,count in d.items():
+    lst.append((value,count))
+
+lst.sort()
+for value,count in lst:
+  print(value,count)
 

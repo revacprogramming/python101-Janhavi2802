@@ -1,18 +1,18 @@
-# Functions
+#conditional execution
+S = float(input("Enter Score: "))
+if (S<0.0 or S>1.0):
+    print('error')
+elif(S>=0.9):
+    print("A")
+elif(S>=0.8):
+    print("B")
+elif(S>=0.7):
+    print("C")
+elif(S>=0.6):
+    print("D")
+elif(S<0.6):
+    print("F")
 
-def computepay(h, r):
-    if h > 40:
-        P = 1.5 * r * (h - 40) + (40 *r)
-    else:
-        P = h * r
-    return P
+
         
-	
 
-hours = input(" Enter hour:")
-h = float(hours)
-rphrs = input("Enter rate per hours:")
-rph = float(rphrs)
-
-P = computepay(h,rph)
-print("Pay",P)
